@@ -1,0 +1,24 @@
+[package]
+name = "mkvac-saga"
+version = "1.0.0-beta.1"
+description = ""
+authors = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+
+
+[dependencies]
+ark-std = "0.5.0-alpha.0"
+cosmian_crypto_core = { version = "10.0.1", default-features = false, features = [
+  "ser",
+  "sha3",
+  "aes",
+  "chacha",
+  "curve25519",
+] }
+zeroize = { version = "1.7", features = ["zeroize_derive"] }
+tiny-keccak = { version = "2.0.2", features = ["kmac", "sha3"] }
+curve25519-dalek = { version = "4.1.3" }
+anyhow = "1.0.75"
+rayon = "1.11.0"

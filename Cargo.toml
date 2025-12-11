@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "crates/saga",
+]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0-beta.1"
+authors = ["Vomer <tarasworonjanski@gmail.com>"]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/FeurJak/mKVAC/"
+
+
+[workspace.lints.rust]
+trivial_casts = "warn"
+trivial_numeric_casts = "warn"
+unused_import_braces = "warn"
+unused_qualifications = "warn"
+
+
+[workspace.dependencies]
+saga = { path = "crates/saga" }
