@@ -1,5 +1,7 @@
 mod curve;
 mod errors;
+mod mkvac;
+mod nizk;
 mod traits;
 
 use cosmian_crypto_core::{
